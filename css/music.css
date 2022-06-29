@@ -1,0 +1,220 @@
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?8ytkj7');
+    src:  url('../fonts/icomoon.eot?8ytkj7#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?8ytkj7') format('truetype'),
+      url('../fonts/icomoon.woff?8ytkj7') format('woff'),
+      url('../fonts/icomoon.svg?8ytkj7#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+header{
+    background-color: #1b141b!important;
+}
+.bg{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url(../images/musci-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    transform-origin: center;
+}
+.spread{
+    height: 100%;
+}
+.top_info{
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    z-index: 7;  
+}
+.needle{
+    position: absolute;
+    width: 148px;
+    height: 252px;
+    top: 0%;
+    left: 48%;
+    background: url(../images/cd_needle.png) no-repeat ;
+    background-size: 115%;
+    z-index: 10;
+    transform: rotate(-35deg);      
+    transform-origin: 20px 20px;
+    animation: needle_start .5s linear forwards;
+    animation-play-state: paused;
+}
+
+#play{
+    animation: needle_start .5s linear;
+}
+#pause{
+    animation: needle_pause .5s linear;
+}
+@keyframes needle_start{
+    0%{
+        transform: rotate(-35deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+@keyframes needle_pause{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-35deg);
+    }
+}
+.cd{
+  position: relative;
+  width: 500px;
+  height: 500px;
+  top: 15%;
+  left: -3%;
+  margin: 0 auto;
+  background: url(../images/cd4.png) no-repeat; 
+  background-size: 100%;
+  animation: cd_rotate 20s .6s linear infinite forwards;
+  animation-play-state: paused;
+  
+}
+  
+
+@keyframes cd_rotate{
+0%{
+    transform: rotate(0deg);
+}
+100%{
+  transform: rotate(360deg);
+}
+}
+.picture{
+    overflow: hidden;
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    top: 22%;
+    left: 22%;
+    border-radius: 50%;
+    background: url(../images/music-liyue.png) no-repeat; 
+    background-position: center; 
+    background-size: 300px;
+    border: 4px solid #050405;
+}
+
+.menu{
+    position: absolute;
+    top: 84%;
+    width: 100%;
+    height: 26%;
+    background-color: rgba(0,0,0,.5);
+    z-index: 1;
+}
+.control{
+    position: relative;
+    width: 1200px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 2%;
+}
+.control li{   
+    float: left;
+    width: 100px;
+    height: 50px;
+    font-size: 60px;
+    font-family: 'icomoon';
+    color: rgba(255,255,255,.7);
+}
+.control li{
+    position: absolute;
+    text-align: center;
+    cursor: pointer;
+}
+.CurrentSongTitle{
+    position: absolute;
+    top: -40%;
+    left: 37%;
+    margin: 0 auto;
+     width: 320px; 
+    height: 70px;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    background-color: rgba(0,0,0,.6);
+    border-radius: 5px;
+}
+.previous{
+    left: 20%;
+}
+.paly_pause{
+left: 42%;
+}
+.next{
+    left: 64%;
+}
+.voice{
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    top: 90%;
+    right: 20%;
+    font-size: 60px;
+    font-family: 'icomoon';
+    color: rgba(255,255,255,.7);   
+    font-size: 35px !important;
+    z-index: 10;
+}
+.voiceBar{
+    position: relative;
+    top: -63%;
+    left: 75%;
+    width: 140px;
+    height: 12px;
+    border-radius: 20px 20px;
+    background-color: rgba(255,255,255,.3);
+}
+.currentVoice{
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px; 
+}
+.pro_bar{ 
+    position: relative;
+    top: -31%;
+    left: -2%;
+    width: 900px;
+    height: 7px; 
+    margin: 0 auto;  
+    background-color: rgba(255,255,255,.5);
+    border-radius: 5px;  
+    cursor: pointer; 
+  }
+  
+  .current_pro{
+      position: relative;
+      height: 100%;
+      width: 0px;
+      background-color: #fff;
+      border-radius: 5px;  
+  }
+  .dot{
+    position: absolute;
+    top: -67%;
+    right:-10px;
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border-radius:50% ;
+  }
+  .currentTime{
+    position: absolute;
+    right: -65px;
+    top: -6px;
+    font-size: 16px;
+    color: #fff;
+  }
+  

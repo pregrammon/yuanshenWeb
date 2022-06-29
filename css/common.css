@@ -1,0 +1,100 @@
+
+*{
+  user-select: none;
+}
+.w {
+  width: 1200px;
+  margin: 0 auto;
+}
+header {
+  position: relative;
+  height: 80px;
+  background-color: #2b231d;
+  z-index: 10;
+}
+
+.logo {
+  float: left;
+  margin-left: 80px;
+  margin-top: -6px;
+}
+.logo h1 a {
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url(../images/logo.png) no-repeat;
+  background-size: 130px auto;
+  font-size: 0;
+}
+/* 导航栏部分 */
+
+.nav ul {
+  height: 100%;
+  margin-left: 140px;
+}
+.nav ul li {
+  height: 100%;
+  padding: 0 60px;
+  float: left;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.nav ul li a {
+  color: #fff;
+}
+.nav ul li a span {
+  position: relative;
+  display: block;
+}
+
+.nav ul li a:hover span:first-child::before{
+  position: absolute;
+  content: '';
+  width: 55px;
+  height: 4px;
+  top: -15px;
+  left: -4px;
+  background-color: #fff;
+}
+.select_pages a span:first-child::before{
+  position: absolute;
+  content: '';
+  width: 55px;
+  height: 4px;
+  top: -15px;
+  left: -4px;
+  background-color: #fff;
+}
+.nav ul li a span:first-of-type {
+  font-size: 24px;
+}
+footer{
+ position: relative; 
+  height: 120px;
+  background-color: #000;
+}
+.copyright{
+  position: absolute;
+ top: -1px;
+ left: 50%; 
+ transform: translate(-50%);
+ width: 1579px;
+}
+
+.copyright img{
+  position: absolute;
+  top: 17px;
+  left: 400px;
+}
+.copyright p{
+  position: absolute;
+  top: 40px;
+  left: 557px;
+  width: 550px;
+  text-align: center;
+  font-size: 14px;
+  color: #999;
+   letter-spacing: 1px;  
+}
+

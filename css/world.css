@@ -1,0 +1,358 @@
+
+header{
+    position: fixed !important;
+    width: 100%;
+    z-index: 10;
+}
+footer{
+    position: absolute !important; 
+    top: 400%;
+    width: 100%;
+}
+ .spread{
+    height: 100%;
+} 
+.scroll{
+    position: fixed;
+    right: 5px;
+    top: 3%;
+    width: 6px;
+    height: 95%;
+    background-color:rgba(0,0,0,.3);
+    border-radius: 3px 3px;
+    z-index: 10;
+}
+.thumb{
+    position: relative;
+    width: 100%;
+    height: 20%;
+    top: 0%;
+    background-color: rgba(255,255,255,.5);
+    border-radius: 3px 3px;
+    transition: top .5s;
+}
+
+.bg1{
+    background: url(../images/world/bg1.png) no-repeat;
+}
+.bg2{
+    top: 100%;
+    background: url(../images/world/bg2.jpg) no-repeat;
+}
+.bg3{
+    top: 200%;
+    background: url(../images/world/bg3.jpg) no-repeat;
+}
+.bg4{
+    top: 300%;
+    background: url(../images/world/bg4.jpg) no-repeat;
+
+}
+.bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;    
+    transform-origin: center;
+}
+.bg .content{
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    top: 30%; 
+    z-index: 9;
+}
+.content .title{
+    position: relative;
+    width: 30%;
+    height: 100%;
+    left: 3%;
+    background: url(../images/world/tiwate.png) no-repeat;
+    background-size: 67%;
+    margin: 0 auto;
+}
+.title img{
+    position: absolute;
+    top: 62%;
+    left: -16%;
+    width: 100%;
+}
+.content p{
+    height: 100%;
+    width: 38%;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 2em;
+}
+.ico {
+    position: relative;
+    width: 4%;
+    height: 40%;
+    top: 70%;
+    left: -2%;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.img1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../images/world/ico1-2.png) no-repeat;
+    background-size: 100%;
+    
+}
+.img2{
+    position: absolute;
+    width: 46%;
+    height: 24%;
+    top: 52%;
+    left: 28%;
+    background: url(../images/world/ico1-1.png) no-repeat;
+    background-size: 100%;
+    animation: i2 2s ease-in-out infinite alternate;
+}
+@keyframes i2{
+  0%{
+    transform: translateY(0%);
+  }
+  100%{
+    transform: translateY(61%);
+  }
+}
+ .img3{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0%;
+    left: 0%;
+    background: url(../images/world/ico1.png) no-repeat;
+    background-size: 100%;
+    animation: i3 1s ease-in-out infinite;
+} 
+@keyframes i3{
+    0%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1.7);
+        opacity: .5;
+    }
+}
+.part{
+ position: relative;
+ width: 100%;
+ height: 20%;
+ top: 20%;
+}
+.mengde_title{   
+    background: url(../images/world/mengde.png) no-repeat;  
+}
+.liyue_title{   
+    background: url(../images/world/liyue.png) no-repeat;  
+}
+.daoqi_title{   
+    background: url(../images/world/daoqi.png) no-repeat;  
+}
+.mengde_title,.liyue_title,.daoqi_title{
+    position: relative;
+    width: 6%;
+    height: 65%;
+    left: -2%;
+    background-size: 100%;
+    margin: 0 auto;   
+}
+
+.part h1{
+    position: absolute;
+    width: 100%;
+    top: 95%;
+    left: 10%;
+    font-size: 5vh;
+    color: #fff;
+    font-weight: 400;
+}
+.part h1::before{
+    position: absolute;
+    content: '';
+    left: -360%;
+    top: 45%;
+    width: 335%;
+    height: 20%;
+    background: url(../images/world/title-decro.png)no-repeat;
+    background-size: 100%;
+}
+.part h1::after{
+    position: absolute;
+    content: '';
+    left: 107%;
+    top: 45%;
+    width: 335%;
+    height: 20%;
+    background: url(../images/world/title-decro.png)no-repeat;
+    background-size: 100%;
+    transform: rotateY(180deg);
+}
+.part p{
+    position: relative;
+    width: 47%;
+    height: 100%;
+    top: 60%;
+    left: -2%;
+    font-size: 16px;
+    text-align: center;
+    margin: 0 auto;
+    color: #fff;
+    line-height: 2em;
+}
+.part_ico{
+    position: relative;
+    width: 8%;
+    height: 100%;
+    top: 80%;
+    background: url(../images/world/mengde-ico.png) no-repeat ;
+    margin: 0 auto;
+    background-size: 45%;
+}
+.part_img{
+    position: absolute;
+    width: 44%;
+    height: 36%;
+    top: 0;
+    left: 0;
+    background: url(../images/world/part-ico.png) no-repeat;
+    background-size: 100%;
+    animation: part_img .8s linear infinite;
+    cursor: pointer;
+}
+.part_ico span{
+    position: absolute;
+    top: 45%;
+    font-size: 16px;
+    color: #fff;
+}
+@keyframes part_img{
+    0%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1.9);
+        opacity: .2;
+    }
+}
+/* 点击内容 */
+article .mengde,.liyue,.daoqi{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.7);
+    z-index: 100;
+}
+article .mengde{
+    top: 100%;
+}
+article .liyue{
+    top: 200%;    
+}
+article .daoqi{
+    top: 300%    
+}
+.mengde .box,.liyue .box,.daoqi .box {
+    position: relative;
+     overflow: hidden; 
+    height: 75%;
+    width: 730px;
+    top: 10%;
+    margin: 0 auto;
+}
+
+.box ul li p{
+    font-size: 15px;
+    color: #fff;
+    line-height: 2em;
+   padding: 20px 0;
+}
+.box h2{
+    position: relative;
+    padding: 10px 0;
+    font-size: 28px;
+    color: #fff;
+    font-weight: 400;
+    border-bottom:3px solid rgba(255,255,255,.3) ;
+}
+.box h2::before{
+    position: absolute;
+    content: '';
+    width: 80px;
+    height: 3px;
+    top: 62px;
+    left: 0;
+    background-color: #cca574;
+}
+
+.box img{
+ width: 640px;   
+}
+.box ul{
+    position: relative;
+    transition: top ;
+    top: 0%;
+}
+.box ul li{
+    width: 640px;
+    margin-bottom: 30px;
+}
+.top{
+    position: relative;
+    top: 13%;
+    left: 0%;
+    width: 730px;
+    height: 100px;
+    margin:  0 auto;
+}
+.top h1{
+    height: 65px;
+    width: 640px;   
+    padding-left: 20px;
+    font-weight: 400;
+    line-height: 65px;
+    font-size: 36px;
+    color: #fff;
+    background: url(../images/world/mengde-top.png) no-repeat rgba(255, 255, 255, .05);
+    background-size: 127px;
+}
+.top button{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 65px;
+    width: 65px;
+    background: url(../images/world/close.png) no-repeat rgba(255, 255, 255, .05) center;
+    background-size: 25px;
+}
+.mengde .scroll_2,.liyue .scroll_2,.daoqi .scroll_2{
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    width: 4px;
+    height: 100%;
+    background-color: rgba(255,255,255,.3);
+    z-index: 100;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.thumb_2{
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    width: 4px;
+    height: 20%;
+    background-color: rgba(255,255,255,.7);
+    z-index: 100;
+    border-radius: 2px;
+    transition: top;
+}

@@ -1,0 +1,30 @@
+footer{
+    margin-top: 50px;
+}
+section ul{
+    width: 91%;
+    margin: 0px auto;
+    margin-top: 50px;
+}
+body{
+    background: url(../images/wallpaper/wallpaper-bg.jpg) no-repeat;
+    background-size: 100%;
+    background-position: 0px 80px;
+}
+section ul li{
+    overflow: hidden;
+    float: left;
+    width: 300px;
+    height: 200px;
+    margin: 5px 5px;
+    border-radius: 5px; 
+    cursor: pointer;
+}
+section ul li img{  
+    height: 200px;
+    transition: all .5s;
+}
+section ul li img:hover{  
+    height: 200px;
+    transform: scale(1.1);
+}
